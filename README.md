@@ -25,11 +25,13 @@ RegisterNumber:  24900113
 import pandas as pd
 import numpy as np
 data=pd.read_csv("Placement_Data.csv")
-data.head()
+
+print(data.head())
+print()
 data1=data.copy()
 data1.head()
 data1=data.drop(['sl_no','salary'],axis=1)
-print(data1)
+data1
 print()
 
 from sklearn.preprocessing import LabelEncoder
@@ -81,8 +83,8 @@ print("Predicted Result:",y_prednew)
 
 ## Output:
 
-![Screenshot 2024-11-15 212236](https://github.com/user-attachments/assets/95081b1e-be90-4d9c-b48d-c78f049a09e3)
-![Screenshot 2024-11-15 212247](https://github.com/user-attachments/assets/76140394-013d-4c0f-8d5f-c5522bec66dc)
+![Screenshot 2024-11-24 150730](https://github.com/user-attachments/assets/a6c19f30-1619-4f0c-93ce-d0c22086c38b)
+
 
 
 ## Result:
